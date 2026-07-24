@@ -1,0 +1,110 @@
+  ---> start reading Transport.inp
+ 'Water quality in the Aquia aquifer'                                              
+
+                 ****** Writing solute transport input ******
+
+
+ Options for controlling chemical calculations:
+ *******************************************
+  Using sequential non-iterative approach
+  Initializing boundary & recharge input solution: Yes
+  Iterative solver - See Tough2 V2 Manual
+  Default 2 Iterations: DH and Chemical Solver
+  Number of gaseous species for transport=  0
+  Print chemical speciation results at each grid block and each time step:  No
+  Monitor porosity and permeability changes but do not affect fluid flow 
+  CO2 and H2O reaction sources are not considered in the flow simulation (only for EOS2 or ECO2 module)
+  Calculate derivatives of mineral kinetic rates by      analytical method
+
+ Constraints for chemistry solver:
+ *********************************
+  Minimum liquid saturation = 0.1000E-01
+  Transport time steps for aq. species and gaslimited by  0.90 x  Courant number
+  Maximum stoichiometric ionic strength = 0.4000E+01
+
+ Input and output file names:
+ ***************************
+  Thermo. database: therakin10.dat      
+  Iteration info:   iter.dat            
+  Plot aqueous:     aqui_con.dat        
+  Plot minerals:    aqui_min.dat        
+  Plot gas:         aqui_gas.dat        
+  Plot time series: aqui_tim.dat        
+
+ Time/space weighting factors and diffusion coefficients:
+ *******************************************************
+       WTIME      WUPC  DIFUN     DIFUNG 
+        1.00      1.00 0.395E-06 0.000E+00
+
+ Convergence tolerance data:
+ **************************
+  Maximum iterations for solving transport    =    1
+  Relative tolerance for solving transport    = 0.100E-03
+  Maximum iterations for whole chemical system=  200
+  Relative tolerance for whole chemical system= 0.100E-03
+  (absolute mass action tolerance set at min. 1.E-6)
+  Maximum iterations for solving adsorption   =   30
+  Relative tolerance for solving adsorption   = 0.100E-05
+  Rel. con. change tolerance for steady-state = 0.000E+00
+  Rel. con. change tolerance for steady-state = 0.000E+00
+
+ Printout/output control flags:
+ *****************************
+  Writing frequency in time           =    5
+  Number of nodes to output in time file =    1
+  Number of primary species (total amounts) to output in time/plot files =    7
+  Number of minerals to output time/plot files =    1
+  Number of aqueous species to output time/plot files =    0
+  Number of adsorbed species to output time/plot files =    0
+  Number of exchange species to output time/plot files =    5
+  ICONFLAG(0=mol/kg H2O,1=mol/L,2=g/L,mg/L(ppm) )=    1
+  MINFLAG(0=change in mol/m3, 1=change in volume fraction,
+          2=current volume fraction, 3=change in volume%)    1
+
+ Elements for which to output time series:
+ F  11
+
+ Aqueous components for which to output data: 
+    3    4    5    6    7    8    9
+
+ Minerals for which to output data: 
+    1
+
+ Individual aqueous species for which to output molalities:
+
+ Surface complexes for which to output molalities:
+
+ Exchanged species for which to output data: 
+    1    2    3    4    5
+
+ Default values for chemical zones:
+ *********************************
+             IZIW IZBW IZMI IZGS IZAD IZEX IZPP IZKD
+             ---- ---- ---- ---- ---- ---- ---- ----
+                1    1    1    1    0    1    1    0
+
+ Data for chemical zones:
+ ***********************
+   ELEM INDX IZIW IZBW IZMI IZGS IZAD IZEX IZPP IZKD
+   ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+  F   0    1    1    1    1    1    0    1    1    0
+  F   1    2    1    1    1    1    0    1    1    0
+  F   2    3    1    1    1    1    0    1    1    0
+  F   3    4    1    1    1    1    0    1    1    0
+  F   4    5    1    1    1    1    0    1    1    0
+  F   5    6    1    1    1    1    0    1    1    0
+  F   6    7    1    1    1    1    0    1    1    0
+  F   7    8    1    1    1    1    0    1    1    0
+  F   8    9    1    1    1    1    0    1    1    0
+  F   9   10    1    1    1    1    0    1    1    0
+  F  10   11    1    1    1    1    0    1    1    0
+  F  11   12    1    1    1    1    0    1    1    0
+  F  12   13    1    1    1    1    0    1    1    0
+  F  13   14    1    1    1    1    0    1    1    0
+  F  14   15    1    1    1    1    0    1    1    0
+  F  15   16    1    1    1    1    0    1    1    0
+  F  16   17    1    1    1    1    0    1    1    0
+ 
+ end
+ 
+  ---> finished reading Transport.inp 

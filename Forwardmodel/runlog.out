@@ -1,0 +1,118 @@
+  ---> start reading Transport.inp
+  ---> finished reading Transport.inp 
+
+ --> start reading chemical input data from Geochemical.inp
+
+
+     Temporarily stop reading Geochemical.inp to read thermodynamic database....
+    --> Start reading thermodynamic database: therakin10.dat      
+ 
+  --- List of all possible aqueous complexes --- 
+          (o-phth)-2          
+          acetic~acid(aq)     
+          acetate             
+          acetone(aq)         
+          benzene(aq)         
+          clo4-               
+          co2(aq)             
+          co3-2               
+          ethane(aq)          
+          h2(aq)              
+          methane(aq)         
+          ch4(aq)             
+          methanol(aq)        
+          oh-                 
+          so3-2               
+          cacl+               
+          cacl2(aq)           
+          caco3(aq)           
+          cahco3+             
+          caoh+               
+          caso4(aq)           
+          clo-                
+          clo2-               
+          clo3-               
+          hs-                 
+          h2s(aq)             
+          h2so4(aq)           
+          hcl(aq)             
+          hclo(aq)            
+          hclo2(aq)           
+          ho2-                
+          hs2o3-              
+          hso3-               
+          hso4-               
+          hso5-               
+          kcl(aq)             
+          khso4(aq)           
+          koh(aq)             
+          kso4-               
+          mg4(oh)4+4          
+          mgcl+               
+          mgco3(aq)           
+          mghco3+             
+          mgoh+               
+          mgso4(aq)           
+          nacl(aq)            
+          naco3-              
+          nahco3(aq)          
+          naoh(aq)            
+          naso4-              
+          s-2                 
+          s2-2                
+          s2o3-2              
+          s2o4-2              
+          s2o5-2              
+          s2o6-2              
+          s2o8-2              
+          s3-2                
+          s3o6-2              
+          s4-2                
+          s4o6-2              
+          s5-2                
+          s5o6-2              
+          so2(aq)             
+ 
+  --- Aqueous complexes selected -------------- 
+          oh-                 
+          nahco3(aq)          
+          cahco3+             
+          mghco3+             
+          co2(aq)             
+          co3-2               
+          naso4-              
+          kso4-               
+          naco3-              
+          ch4(aq)             
+  ---------------------------------------------- 
+ 
+ calcite               3.693400000000000E-002
+ 
+  --- List of all possible surface complexes --- 
+          xoh2+               
+          xo-                 
+ 
+  --- Surface complexes selected -------------- 
+          xoh2+               
+          xo-                 
+  ---------------------------------------------- 
+ 
+    --> Finished reading thermodynamic database
+     ....back to reading Geochemical.inp
+
+
+  --> Finished reading Geochemical.inp file
+
+
+     ...start initial surface complexation calcs
+
+
+     ...done initial surface complexation calcs
+
+
+  ...running...
+     see output file: iter.dat             for time and time step information
+
+
+  ...done!   simulation finished
+

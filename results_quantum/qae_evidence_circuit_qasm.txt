@@ -1,0 +1,21 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+gate unitary q0 { u(pi/2,0,0) q0; }
+gate multiplexer_dg q0 { unitary q0; }
+gate isometry_to_uncompute_dg q0 { multiplexer_dg q0; }
+gate state_preparation(param0,param1) q0 { isometry_to_uncompute_dg q0; }
+gate cQ__1 q0,q1,q2 { s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cx q0,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cu(-0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cu(0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(-0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cu(0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(pi/2,-pi,pi,0) q0,q1; cx q0,q1; cx q0,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; ccx q0,q1,q2; cx q0,q1; cu(pi/2,0,0,0) q0,q1; cx q0,q1; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cx q0,q2; cu(0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cu(-0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cu(-0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; p(pi) q0; }
+gate cQ__2 q0,q1,q2 { s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cx q0,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cu(-0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cu(0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(-0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cu(0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(pi/2,-pi,pi,0) q0,q1; cx q0,q1; cx q0,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; ccx q0,q1,q2; cx q0,q1; cu(pi/2,0,0,0) q0,q1; cx q0,q1; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cx q0,q2; cu(0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cu(-0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cu(-0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cx q0,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cu(-0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cu(0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(-0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cu(0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(pi/2,-pi,pi,0) q0,q1; cx q0,q1; cx q0,q2; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; ccx q0,q1,q2; cx q0,q1; cu(pi/2,0,0,0) q0,q1; cx q0,q1; s q2; h q2; t q2; cx q0,q2; tdg q2; h q2; sdg q2; cx q0,q2; cu(0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cu(-0.1656757426617684,0,0,0) q0,q2; ccx q0,q1,q2; cx q0,q1; cu(0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; cu(-0.4980479182434451,0,0,0) q0,q2; ccx q0,q1,q2; }
+gate gate_IQFT q0,q1 { h q0; cp(-pi/2) q1,q0; h q1; }
+gate gate_QPE q0,q1,q2,q3 { h q0; h q1; cQ__1 q0,q2,q3; cQ__2 q1,q2,q3; gate_IQFT q1,q0; }
+qreg eval[2];
+qreg q[2];
+creg c0[2];
+state_preparation(0.7071067811865476,0.7071067811865476) q[0];
+x q[0];
+cry(0.3313514853235368) q[0],q[1];
+x q[0];
+cry(0.9960958364868902) q[0],q[1];
+gate_QPE eval[0],eval[1],q[0],q[1];
+measure eval[0] -> c0[0];
+measure eval[1] -> c0[1];

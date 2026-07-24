@@ -1,0 +1,68 @@
+QAE GATE-ERROR
+====================================================================================================
+
+STATE_QUBITS = 1
+EVAL_QUBITS = 2
+B5 range = [1.000000000000e-03, 7.000000000000e-03]
+
+Ideal values
+----------------------------------------------------------------------------------------------------
+Ideal Evidence E[W] = 1.277030000000e-01
+Ideal E[xW] for bouncon[5] = 4.095600000000e-02
+Ideal normalized posterior mean = 3.207129041604e-01
+Ideal real bouncon[5] = 2.924277424963e-03
+True bouncon[5] = 2.862800000000e-03
+Ideal bouncon[5] absolute error = 6.147742496261e-05
+Ideal bouncon[5] relative error = 2.147458%
+
+Five gate-error cases
+----------------------------------------------------------------------------------------------------
+s0d0 (single=0%, double=0%)
+  Evidence = 1.315789492474e-01
+  Evidence relative error = 3.035128%
+  E[xW] = 4.266732053761e-02
+  E[xW] relative error = 4.178437%
+  bouncon[5] normalized mean = 3.242716314552e-01
+  bouncon[5] real mean = 2.945629788731e-03
+  bouncon[5] absolute error = 8.282978873101e-05
+  bouncon[5] relative error = 2.893314%
+
+s1d1 (single=1%, double=1%)
+  Evidence = 1.349631639287e-01
+  Evidence relative error = 5.685194%
+  E[xW] = 6.552871610014e-02
+  E[xW] relative error = 59.997842%
+  bouncon[5] normalized mean = 4.855303787541e-01
+  bouncon[5] real mean = 3.913182272525e-03
+  bouncon[5] absolute error = 1.050382272525e-03
+  bouncon[5] relative error = 36.690732%
+
+s5d1 (single=5%, double=1%)
+  Evidence = 1.404251420010e-01
+  Evidence relative error = 9.962289%
+  E[xW] = 9.031709200388e-02
+  E[xW] relative error = 120.522248%
+  bouncon[5] normalized mean = 6.431689561917e-01
+  bouncon[5] real mean = 4.859013737150e-03
+  bouncon[5] absolute error = 1.996213737150e-03
+  bouncon[5] relative error = 69.729417%
+
+s1d5 (single=1%, double=5%)
+  Evidence = 1.436622703661e-01
+  Evidence relative error = 12.497177%
+  E[xW] = 1.071555691963e-01
+  E[xW] relative error = 161.635827%
+  bouncon[5] normalized mean = 7.458852552112e-01
+  bouncon[5] real mean = 5.475311531267e-03
+  bouncon[5] absolute error = 2.612511531267e-03
+  bouncon[5] relative error = 91.257214%
+
+s5d5 (single=5%, double=5%)
+  Evidence = 1.502182248504e-01
+  Evidence relative error = 17.630929%
+  E[xW] = 1.255029110354e-01
+  E[xW] relative error = 206.433517%
+  bouncon[5] normalized mean = 8.354706039185e-01
+  bouncon[5] real mean = 6.012823623511e-03
+  bouncon[5] absolute error = 3.150023623511e-03
+  bouncon[5] relative error = 110.032962%

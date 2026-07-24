@@ -1,0 +1,248 @@
+
+ --> start reading chemical input data from Geochemical.inp
+
+'Water quality in the Aquia aquifer'                                                                
+--------------------------------------------------------------------------------
+DEFINITION OF THE GEOCHEMICAL SYSTEM
+PRIMARY AQUEOUS SPECIES
+ h2o                                      0
+ h+                                       0
+ ca+2                                     0
+ mg+2                                     0
+ na+                                      0
+ k+                                       0
+ hco3-                                    0
+ so4-2                                    0
+ cl-                                      0
+ o2(aq)                                   0
+ xoh                                      2
+     Surface species linked to: calcite             
+     Site density (mol_sites/m2)=  0.5000E-04 Adsorption model= 3
+
+   finished reading all primary species
+   total primary species     npri =  11
+     aqueous primary species npaq =  10
+     surface primary species npads=   1
+
+AQUEOUS KINETICS
+   finished reading aqueous kinetics
+   ntrx =   0
+
+AQUEOUS COMPLEXES
+ oh-                 
+ nahco3(aq)          
+ cahco3+             
+ mghco3+             
+ co2(aq)             
+ co3-2               
+ naso4-              
+ kso4-               
+ naco3-              
+ ch4(aq)             
+   finished reading secondary species
+   naqx =  10
+
+MINERALS
+ calcite                                  0                     0
+     0.000     0.000     0.000
+   finished reading minerals
+    nmin  =   1
+    nmequ =   1
+    nmkin =   0
+    nsalt =   0
+
+
+  The following minerals form ideal solid solutions:
+   None
+ 
+GASES
+   finished reading gases
+    ngas  =   0
+
+SURFACE COMPLEXES
+ xoh2+               
+ xo-                 
+   finished reading surface complexes
+    nads  =   2
+
+SPECIES WITH KD AND DECAY
+Species          Decay const.(1/s)    Th. decay a      Th. decay b
+   finished reading kd/decay species
+    nkdd  =   0
+
+
+     Temporarily stop reading Geochemical.inp to read thermodynamic database....
+    --> Start reading thermodynamic database: therakin10.dat      
+    --> Finished reading thermodynamic database
+     ....back to reading Geochemical.inp
+ 
+EXCHANGEABLE CATIONS
+     Number of exchangeable sites:   1
+     Model for exchange dependence on water saturation: Mod_Xsl =  1
+          =1: Simply divide by water saturation 
+          =2: Only the wetted proportion 
+               master     convention    selectivity
+ na+                1             1            1.00
+ k+                 0             1            0.20
+ ca+2               0             1            0.69
+ mg+2               0             1            0.67
+ h+                 0             1            0.00
+   finished reading exchanged species
+    nexc  =   5
+
+
+ Finished reading upper part of Geochemical.inp
+ SUMMARY OF THERMODYNAMIC DATA FOR THE CHEMICAL SYSTEM
+
+   Components     a0    charge
+  h2o            0.000    0.0
+  h+             3.080    1.0
+  ca+2           2.870    2.0
+  mg+2           2.540    2.0
+  na+            1.910    1.0
+  k+             2.270    1.0
+  hco3-          2.100   -1.0
+  so4-2          3.150   -2.0
+  cl-            1.810   -1.0
+  o2(aq)         0.000    0.0
+  xoh            0.000    0.0
+
+
+ Log K interpolation coefficients as a function of temperature (K) (a,b,c,d,e)
+ valid temperature range (deg.C.):   0.0 to 300.0
+                        a*ln(TK)       b          c*TK     d*(TK)**-1  e*(TK)**-2
+ oh-                  -1.1609E+02  7.4186E+02  1.1647E-01 -3.8963E+04  2.6264E+06
+ nahco3(aq)           -1.9296E+02  1.2242E+03  1.9025E-01 -6.6962E+04  3.8160E+06
+ cahco3+               1.4238E+02 -9.0678E+02 -1.4307E-01  5.1998E+04 -3.3081E+06
+ mghco3+               1.4465E+02 -9.2374E+02 -1.4285E-01  5.3640E+04 -3.4446E+06
+ co2(aq)               1.0336E+02 -6.6225E+02 -1.0747E-01  3.8310E+04 -2.6168E+06
+ co3-2                -1.2715E+02  8.1537E+02  1.2850E-01 -4.5171E+04  2.8995E+06
+ naso4-                2.2849E+02 -1.4587E+03 -2.1256E-01  8.1356E+04 -4.7528E+06
+ kso4-                 1.5172E+02 -9.6700E+02 -1.4844E-01  5.4823E+04 -3.3736E+06
+ naco3-                5.5748E+01 -3.5618E+02 -2.4308E-02  1.9021E+04 -7.2732E+05
+ ch4(aq)               2.2512E+02 -1.4452E+03 -2.2600E-01  1.3093E+05 -5.7841E+06
+ calcite               1.4263E+02 -9.0477E+02 -1.4455E-01  5.0724E+04 -2.9370E+06
+ xoh2+                 0.0000E+00 -7.4000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+ xo-                   0.0000E+00  9.2400E+00  0.0000E+00  0.0000E+00  0.0000E+00
+
+ dV interpolation coefficients as a function of temperature (K) (a,b,c,d,e) for log(K) pressure dependency 
+ valid temperature range (deg.C.):   0.0 to 300.0
+                        a              b*TK       c*TK**2     d*(TK)**-1  e*(TK)**-2
+
+ Derived Species Reactions
+  species        a0   charge  logK(25. C)  h2o    h+     ca+2   mg+2   na+    k+     hco3-  so4-2  cl-    o2(aq) xoh    
+ oh-            1.400  -1.0       13.991   1.00  -1.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ nahco3(aq)     0.000   0.0       -0.170   0.00   0.00   0.00   0.00   1.00   0.00   1.00   0.00   0.00   0.00   0.00
+ cahco3+        2.310   1.0       -1.043   0.00   0.00   1.00   0.00   0.00   0.00   1.00   0.00   0.00   0.00   0.00
+ mghco3+        2.310   1.0       -1.033   0.00   0.00   0.00   1.00   0.00   0.00   1.00   0.00   0.00   0.00   0.00
+ co2(aq)      100.231   0.0       -6.342  -1.00   1.00   0.00   0.00   0.00   0.00   1.00   0.00   0.00   0.00   0.00
+ co3-2          2.810  -2.0       10.325   0.00  -1.00   0.00   0.00   0.00   0.00   1.00   0.00   0.00   0.00   0.00
+ naso4-         1.810  -1.0       -0.811   0.00   0.00   0.00   0.00   1.00   0.00   0.00   1.00   0.00   0.00   0.00
+ kso4-          1.810  -1.0       -0.875   0.00   0.00   0.00   0.00   0.00   1.00   0.00   1.00   0.00   0.00   0.00
+ naco3-         1.810  -1.0        9.816   0.00  -1.00   0.00   0.00   1.00   0.00   1.00   0.00   0.00   0.00   0.00
+ ch4(aq)      100.231   0.0      144.147   1.00   1.00   0.00   0.00   0.00   0.00   1.00   0.00   0.00  -2.00   0.00
+
+ Mineral Reactions
+  minerals    m.vol(L/mol)  logK(25. C)  h2o    h+     ca+2   mg+2   na+    k+     hco3-  so4-2  cl-    o2(aq) xoh    
+ calcite           0.0369       1.854    0.00  -1.00   1.00   0.00   0.00   0.00   1.00   0.00   0.00   0.00   0.00
+
+ Surface Adsorption Reactions
+  surf.cmplex               logK( 25.C)  h2o    h+     ca+2   mg+2   na+    k+     hco3-  so4-2  cl-    o2(aq) xoh    
+ xoh2+                1.0       -7.400   0.00   1.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   1.00
+ xo-                 -1.0        9.240   0.00  -1.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   1.00
+
+--------------------------------------------------------------------------------
+INITIAL AND BOUDARY WATER TYPES
+ 
+ Initial Water Type =   1
+ water temperature (C)=   25.00
+ water pressure (bar) =    1.00
+        icon        guess         ctot          constrain
+ h2o     1        0.1000E+01        0.1000E+01
+ h+      3        0.1995E-06        0.1995E-06
+ ca+2    1        0.6100E-02        0.6100E-02
+ mg+2    1        0.1200E-01        0.1200E-01
+ na+     1        0.8850E-01        0.8850E-01
+ k+      1        0.2160E-02        0.2160E-02
+ hco3-   1        0.2160E-01        0.2160E-01
+ so4-2   1        0.2700E-03        0.2700E-03
+ cl-     1        0.1018E+00        0.1018E+00
+ o2(aq)  1        0.1000E-04        0.1000E-04
+ xoh     1        0.5000E-01        0.5000E-01
+ 
+ Boundary (+ injection) Water Type =   1
+ water temperature (C)=   25.00
+ water pressure (bar) =    1.00
+        icon        guess         ctot          constrain
+ h2o     1        0.1000E+01        0.1000E+01
+ h+      3        0.1259E-06        0.1259E-06
+ ca+2    1        0.1542E-02        0.1542E-02
+ mg+2    1        0.3190E-05        0.3190E-05
+ na+     1        0.9640E-04        0.9640E-04
+ k+      1        0.8000E-04        0.8000E-04
+ hco3-   1        0.3057E-02        0.3057E-02
+ so4-2   1        0.1000E-05        0.1000E-05
+ cl-     1        0.1000E-03        0.1000E-03
+ o2(aq)  1        0.1000E-49        0.1000E-49
+ xoh     1        0.5000E-49        0.5000E-49
+
+      Number of initial waters:      1
+      Number of boundary waters:   1
+
+
+--------------------------------------------------------------------------------
+INITIAL MINERAL ZONES
+
+ MINERAL ZONE=   1
+mineral         vol.frac.
+ calcite        0.3000E+00 equilibrium
+ Sum of mineral volume fractions in zone: 0.3000E+00
+
+     Total number of mineral zones:   1
+
+
+--------------------------------------------------------------------------------
+INITIAL GAS ZONES
+
+     Total number of gas zones:   0
+
+
+--------------------------------------------------------------------------------
+INITIAL PERMEABILITY-POROSITY ZONES
+
+     Total number of permeability zones=   0
+
+
+--------------------------------------------------------------------------------
+INITIAL SURFACE ADSORPTION ZONES
+
+ ADSORPTION ZONE=  1 IEQUIL=  1
+   Surface name          Units Flag  Surface Area
+     xoh                        0     0.1000E+04
+
+     Total number of adsorption zones=   1
+
+
+--------------------------------------------------------------------------------
+INITIAL LINEAR EQUILIBRIUM Kd ZONES
+
+     Total number of Kd zones=   0
+
+
+--------------------------------------------------------------------------------
+INITIAL ZONES OF CATION EXCHANGE
+zone    ex. capacity(meq/100 g solid or cmol/kg)
+   1           0.2341E+01
+
+     Total number of exchange zones=   1
+
+
+
+  --> Finished reading Geochemical.inp file
+
+
+     ...start initial surface complexation calcs
+
+
+     ...done initial surface complexation calcs
+
